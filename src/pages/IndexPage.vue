@@ -6,6 +6,7 @@
       @reset="onReset"
       class="q-gutter-md"
     >
+      <!-- name -->
       <q-input
         filled
         v-model="name"
@@ -15,6 +16,7 @@
         :rules="[ val => val && val.length > 0 || 'Please type your name']"
       />
 
+      <!-- surname -->
       <q-input
         filled
         v-model="surname"
@@ -24,6 +26,7 @@
         :rules="[ val => val && val.length > 0 || 'Please type your surname']"
       />
 
+      <!-- ID-Code -->
       <q-input
         filled
         v-model="id"
@@ -33,6 +36,7 @@
         :rules="[ val => val && val.length > 0 || 'Please type ID-Code']"
       />
 
+      <!-- Age -->
       <q-input
         filled
         type="number"
@@ -97,6 +101,8 @@ export default {
       },
 
       onReset () {
+        id.value = null
+        surname.value = null
         name.value = null
         age.value = null
         accept.value = false
