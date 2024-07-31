@@ -13,7 +13,7 @@
         label="Your name *"
         hint="Name"
         lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Please type your name']"
+        :rules="[ val => val && val.length > 0 || 'กรุณาใส่ชื่อของคุณ']"
       />
 
       <!-- surname -->
@@ -23,7 +23,7 @@
         label="Your surname *"
         hint="surname"
         lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Please type your surname']"
+        :rules="[ val => val && val.length > 0 || 'กรุณาใส่นามสกุลของคุณ']"
       />
 
       <!-- ID-Code -->
@@ -33,7 +33,17 @@
         label="Your ID*"
         hint="ID "
         lazy-rules
-        :rules="[ val => val && val.length > 0 || 'Please type ID-Code']"
+        :rules="[ val => val && val.length > 0 || 'กรุณาใส่เลขประจำตัวของคุณ']"
+      />
+
+            <!-- ID-Code -->
+            <q-input
+        filled
+        v-model="language"
+        label="Your language*"
+        hint="language "
+        lazy-rules
+        :rules="[ val => val && val.length > 0 || 'กรอกภาษาของคุณ']"
       />
 
       <!-- Age -->
