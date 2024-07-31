@@ -31,7 +31,7 @@
         filled
         v-model="id"
         label="Your ID*"
-        hint="ID"
+        hint="ID "
         lazy-rules
         :rules="[ val => val && val.length > 0 || 'Please type ID-Code']"
       />
